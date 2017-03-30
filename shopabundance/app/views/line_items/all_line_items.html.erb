@@ -1,0 +1,16 @@
+<%= render '/items/partials/nav_menu' %>
+
+<table>
+  <tr>
+    <th>Line Item History</th>
+  </tr>
+
+<% @line_items.each do |line_item| %>
+  <tr>
+    <td><%= line_item.item %></td>
+    <td><%= line_item.qty %></td>
+    <td><%= line_item.created_at %></td>
+  </tr>
+  <% end %>
+
+</table>

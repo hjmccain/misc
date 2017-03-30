@@ -1,0 +1,22 @@
+<%= render '/items/partials/nav_menu' %>
+
+<h4>Product Information</h4>
+
+<ul>
+  <li>Name: <%= @item.name %></li>
+  <li>Category: <%= @item.category %></li>
+  <li>Price: <%= @item.price %> / <%= @item.unit %></li>
+  <li>
+    Line item history:
+    <table>
+      <% @item.line_items.each do |i| %>
+      <tr>
+        <td><%= i.qty %></td>
+        <td><%= i.created_at %></td>
+      </tr>
+      <% end %>
+    </table>
+  </li>
+</ul>
+
+<%= link_to 'Back to full inventory', items_path %>

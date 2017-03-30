@@ -1,0 +1,34 @@
+<%= form_for @item do |item| %>
+
+  <% if @item.errors.any? %>
+    <div>
+      <p>Sorry, something went wrong. You can try again below.</p>
+    </div>
+  <% end %>
+
+  <p>
+    <%= item.label :product %>
+    <%= item.text_field :name %>
+  </p>
+
+  <p>
+    <%= item.label :category %>
+    <%= item.text_field :category %>
+  </p>
+
+  <p>
+    <%= item.label :unit %>
+    <%= item.text_field :unit %>
+  </p>
+
+  <p>
+    <%= item.label :price %>
+    <%= item.text_field :price %>
+  </p>
+
+  <p>
+    <%= item.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back to basket', items_path %>

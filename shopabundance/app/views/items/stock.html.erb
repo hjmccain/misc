@@ -1,0 +1,40 @@
+<%= render '/items/partials/nav_menu' %>
+
+<ul>
+  <li><%= @item.name %></li>
+  <li><%= @item.category %></li>
+  <li><%= @item.price %> / <%= @item.unit %></li>
+</ul>
+
+<%= form_for @line_item do |i| %>
+
+  <% if @line_item.errors.any? %>
+    <div>
+      <p>Sorry, something went wrong. You can try again below.</p>
+    </div>
+  <% end %>
+
+  <p>
+    <%= i.label :quantity %>
+    <%= i.number_field :qty %>
+  </p>
+
+  <p class="hidden">
+    <%= i.text_field :item_id, :value => @item.id %>
+  </p>
+
+  <p class="hidden">
+    <%= i.text_field :item, :value => @item.name %>
+  </p>
+
+  <p class="hidden">
+    <%= i.number_field :price, :value => @item.price %>
+  </p>
+
+  <p>
+    <%= i.submit %>
+  </p>
+<% end %>
+
+
+<%= link_to 'Back to inventory', items_path %>

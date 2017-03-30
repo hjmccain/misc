@@ -1,0 +1,83 @@
+$title: 'Roboto', sans-serif;
+$subtitle: 'Roboto', sans-serif;
+$link: 'Anonymous Pro', monospace;
+$text: 'Anonymous Pro', monospace;
+$white: #ECEAD3;
+$background-white: #F8F7EF;
+$black: #494949;
+$gray: #A0A0A0;
+$background: #FCD116;
+$alt-background: #FFE97F;
+$section-color: #3A75C4;
+$shape-color: #01B8E5;
+
+p {
+  color: $black;
+}
+
+.header-shape-with-text {
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 20px;
+}
+
+.header-shape, .large-header {
+  display: none;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.header-text {
+  display: none;
+}
+
+.more-button {
+  display: block;
+  margin-top: -190px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-shape-with-text {
+    display: none;
+  }
+
+  .large-header {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header-container {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .more-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-shape-with-text {
+    display: none;
+  }
+
+  .header-shape {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+  }
+}

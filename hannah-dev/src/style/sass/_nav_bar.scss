@@ -1,0 +1,63 @@
+$title: 'Roboto', sans-serif;
+$subtitle: 'Roboto', sans-serif;
+$link: 'Anonymous Pro', monospace;
+$text: 'Anonymous Pro', monospace;
+$white: #ECEAD3;
+$background-white: #F8F7EF;
+$black: #494949;
+$gray: #A0A0A0;
+$background: #FCD116;
+$alt-background: #FFE97F;
+$section-color: #3A75C4;
+$shape-color: #01B8E5;
+
+.head-nav {
+  display: none;
+}
+
+.nav-bar {
+  background: $alt-background;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  line-height: 1.9;
+  z-index: 2;
+}
+
+.nav-name {
+  display: inline-block;
+  font-weight: 800;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.nav-link {
+  padding-right: 30px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-bar {
+    right: -20px;
+    padding-left: 50px;
+    line-height: 2.3;
+  }
+
+  .nav-link {
+    padding-right: 20px;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-bar {
+    line-height: 3;
+  }
+
+  .nav-name {
+    display: none;
+  }
+}

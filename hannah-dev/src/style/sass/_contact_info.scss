@@ -1,0 +1,96 @@
+$title: 'Roboto', sans-serif;
+$subtitle: 'Roboto', sans-serif;
+$link: 'Anonymous Pro', monospace;
+$text: 'Anonymous Pro', monospace;
+$white: #ECEAD3;
+$background-white: #F8F7EF;
+$black: #494949;
+$gray: #A0A0A0;
+$background: #FCD116;
+$alt-background: #FFE97F;
+$section-color: #3A75C4;
+$shape-color: #01B8E5;
+
+.banana {
+  position: relative;
+  top: -139px;
+  left: 670px;
+  margin-top: -400px;
+}
+
+.keep-in-touch {
+  width: 90%;
+  max-width: 750px;
+  margin-left: 30px;
+  margin-top: 15%;
+}
+
+.contact-container {
+  font-family: $text;
+  font-size: 1.8em;
+  padding-top: 200px;
+}
+
+.contact {
+  color: $white;
+}
+
+.contact-info-container {
+  margin: -70px 0px 200px 0px;
+  background: $section-color;
+  padding: 10px 0px 30px 150px;
+}
+
+.contact-link {
+  color: $white;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    color: $background;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .banana {
+    position: static;
+    display: block;
+    width: 400px;
+    margin-top: -385px;
+    margin-left: 465px;
+    padding-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banana {
+    position: static;
+    display: block;
+    width: 400px;
+    margin-top: -280px;
+    margin-left: 150px;
+    margin-right: 0px;
+  }
+
+  .contact-info-container {
+    padding: 60px 0px 60px 30px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .banana {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    margin-top: -280px;
+  }
+
+  .contact-container {
+    font-size: 1em;
+  }
+
+  .contact-info-container {
+    padding: 60px 0px 60px 30px;
+  }
+}

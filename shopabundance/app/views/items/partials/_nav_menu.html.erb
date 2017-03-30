@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  function navigate(value) {
+    switch (value) {
+      case "product-list":
+        document.location.href = "http://localhost:3000/";
+        break;
+      case "line-item-history":
+        document.location.href = "http://localhost:3000/line_items/all_line_items";
+        break;
+    }
+  }
+</script>
+
+<select class="nav" name="nav" onchange="navigate(this.value)" >
+  <option selected>Menu</option>
+  <option value="product-list">Product List</option>
+  <option value="line-item-history">Line Item History</option>
+</select>
