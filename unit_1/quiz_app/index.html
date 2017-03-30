@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css_quiz_app.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Quizzly</title>
+</head>
+
+<body>
+  <div id="js-homepage">
+  	<h1><a href="" id="js-home-button">Welcome to Quizzly!</a></h1>
+  	<p id="js-home-page-text">Americans are known for their lack of knowledge on their northern neighbors. Prove the stereotype wrong by playing our fun quiz for all ages!</p>
+  	<p class="hidden" id="js-running-quiz-results">You can't see me until you click the button!</p>
+    <div class="hidden" id="final-quiz-results">
+      <p id="js-correct-answers"></p>
+      <p id="js-incorrect-answers"></p>
+      <p id="js-final-score"></p>
+    </div>
+  </div>
+  <div id="take-quiz" class="centered-btn">
+  	<button id="js-start-quiz" class="btn btn-primary centered-btn">Take the quiz</button>
+  </div>
+  <div id="current-score"></div>
+  <div class="hidden" id="js-quiz">
+  	<form id="js-quiz-form">
+  		<p id="js-question"></p>
+      <ul>
+  		<li><input type="radio" name="answer" value="js-a">
+        <span id="js-answerA"></span><br>
+      </li>
+			<li><input type="radio" name="answer" value="js-b">
+        <span id="js-answerB"></span><br>
+        </li>
+			<li><input type="radio" name="answer" value="js-c">
+        <span id="js-answerC"></span><br>
+        </li>
+			<li><input type="radio" name="answer" value="js-d">
+        <span id="js-answerD"></span><br>
+        </li>
+        </ul>
+			<input type="reset" class="btn btn-primary" id="js-submit-button" value="Submit">
+  	</form>
+  </div>
+  <div id="next-question" class="centered-btn">
+  	<button class="hidden btn btn-primary" id="js-next-question-button">Next question</button>
+  </div>
+  <div id="results-info" class="centered-btn">
+      <button class="hidden btn btn-primary" id="js-take-quiz-again">Take quiz again</button>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="quiz_app.js"></script>
+
+</html>

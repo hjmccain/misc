@@ -1,0 +1,14 @@
+HARDCODED:
+user/welcome.js
+user id/post new entry/actions.js
+user id/delete user/actions.js
+
+- cancel edit button
+- change emojis
+- centering!
+- color scheme
+- padding btwn entries
+
+- on blur...
+- clean up backend endpoints
+- let user pick color scheme, add moods

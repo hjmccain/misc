@@ -1,0 +1,51 @@
+state =
+{
+answer = NUMBER,
+guess = NUMBER,
+feedback = STRING,
+newGuess = ARRAY,
+bool = BOOLEAN
+}
+
+state =
+{
+answer:
+currentGuess: // calculating difference from answer
+guessArray: // displaying past answers
+hasWon:
+}
+
+* User types GUESS into text field / submits
+* React event listener captures
+* React dispatches action GUESS
+* GUESS action triggers reducer to update state
+
+* Compare GUESS with ANSWER and send feedback
+
+///////////////////////////////////////////////////////////
+
+Add a fewestGuesses property to your Redux state
+
+Update your app to display the fewestGuesses state in one of your components
+
+Add two async actions (and their sync counterparts):
+- fetchFewestGuesses which should fetch the fewest guesses from the endpoint
+- saveFewestGuesses which should send a score to the fewest guesses endpoint
+
+Dispatch the actions from your components so you keep track of the fewest guesses
+
+SAVE FEWEST GUESSES
+when someone wins make POST request w/ guess count
+- if you get 201 response
+	- SYNC ACTION: update fewest guesses in store, send feedback
+- if you get 200
+	- SYNC ACTION: send feedback
+- if you get error
+	- SYNC ACTION: error message, send feedback
+
+FETCH FEWEST GUESSES
+when you open page or start new game make GET request
+- if you get an OK response
+	- SYNC ACTION: update fewest guesses in store
+- if you get an ERROR response
+	- SYNC ACTION: error message

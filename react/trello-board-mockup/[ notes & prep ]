@@ -1,0 +1,21 @@
+Next steps...
+
+- Add welcome page with 'Add a new board'
+- After new board is added, go to 'Add a new list'
+- After new list is added, start adding cards
+- User should be able to delete cards, lists, and boards
+- Clear input fields after submit
+
+<List
+	boardTitle=""
+	listTitle=""
+	cards={this.state.boardContent[0].listContent[0].cards2}
+	onCardChange={this.onCardChange}
+	onCardSubmit={this.onCardSubmit}
+	/>
+
+	const routes = (
+		<Router history={hashHistory}>
+			<Route path="/" component={WelcomePage} />
+		</Router>
+	);

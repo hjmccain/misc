@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ThinkfulTube</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+	<div id="home"></div>
+	<div id="page-head">
+		<h1 id="welcome-text" class="content-centered">What sort of video are you looking for?</h1>
+		<p id="search-results-text" style="display: none;"></p>
+	</div>
+	<div id="search">
+		<form id="search-bar" class="content-centered">
+			<input type="search" name="youtube-search"
+        placeholder="e.g. silly giraffes"></input>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<div>
+		<ul id="search-results">
+		<!-- Use a loop to add cloned thumbnails as <li> -->
+		</ul>
+		<button id="next-page" class="hidden">Next</button>
+	</div>
+
+	<!-- for cloning -->
+	<div class="hidden">
+		<li class="result-item">
+			<h3 class="result-title"></h3>
+			<a href="">
+				<img src="">
+			</a>
+			<p class="result-description"></p>
+		</li>
+	</div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

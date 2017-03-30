@@ -1,0 +1,18 @@
+GET    /users         => Get a collection of users
+POST   /users         => Add a user
+GET    /users/:userId => Get a user
+PUT    /users/:userId => Edit a user
+DELETE /users/:userId => Delete a user
+
+
+// POST /users
+// app.post('/users', jsonParser, function(req, res) {
+//   User.create({ username: req.body.username }, function(err, user) {
+//     if (err) {
+//       return res.status(500).json({
+//         message: 'Internal server error.'
+//       });
+//     }
+//     res.location('/users/' + user.id).status(201).json({});
+//   });
+// });

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "thinkful-full-stack-template.0.0.1.css",
+	"sources": [
+		"../../../../client/scss/index.scss"
+	],
+	"mappings": "",
+	"names": []
+}

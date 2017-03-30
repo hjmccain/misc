@@ -1,0 +1,33 @@
+random old code:
+
+// post new user
+
+app.post('/users', jsonParser, function(req, res) {
+  console.log('1', req);
+  var newUser = req.body.username;
+  console.log('2', newUser);
+  User.create({
+    username: newUser
+  }, function(err, user) {
+    if (err) {
+      console.log('2', req.body);
+      return res.status(500).json({
+        message: 'Internal server error.'
+      });
+    }
+    res.status(201).json(user);
+  });
+});
+
+// get all users
+
+app.get('/users', jsonParser, function(req, res) {
+  User.find(function(err, users) {
+    if (err) {
+      return res.status(500).json({
+        message: 'Internal server error.'
+      });
+    }
+    res.json(users);
+  });
+});

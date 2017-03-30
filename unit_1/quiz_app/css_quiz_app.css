@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+}
+
+div {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form {
+	max-width: 300px;
+	border: solid 1px gray;
+	border-radius: 4px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.more-space {
+	margin-bottom: 10px;
+}
+
+.centered-btn {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.smaller-font {
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+#js-homepage {
+	text-align: center;
+
+}
+
+#js-question {
+	font-weight: bold;
+}

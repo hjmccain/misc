@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "thinkful-full-stack-template.0.0.1.css",
+	"sources": [
+		"../../../../client/scss/index.scss"
+	],
+	"mappings": "AAAA,AAAA,CAAC,CAAC;EACD,WAAW,EAAE,UAAW;EACxB,UAAU,EAAE,IAAK;EACjB,UAAU,EAAE,UAAW,GAAG",
+	"names": []
+}

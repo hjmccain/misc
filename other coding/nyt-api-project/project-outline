@@ -1,0 +1,22 @@
+Project using NYT API
+
+Homepage —
+Logo
+Find real news: [ Search bar ]
+Buttons: Search recent, search archives
+
+Results page —
+
+Header: Small logo + Find real news + search bar
+
+Display:
+- h2: "Displaying your results for..."
+- Thumbnail image, if possible
+- Short description
+- Title
+- 'Read more' link takes you to NYT
+
+Sidebar:
+- Saved articles (hyperlinked titles only)
+
+Footer: More results button

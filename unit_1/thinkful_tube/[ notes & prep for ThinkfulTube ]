@@ -1,0 +1,33 @@
+[ notes & prep for ThinkfulTube ]
+
+endpoint: https://www.googleapis.com/youtube/v3/search
+example URL: https://www.youtube.com/watch?v=XKEuBDADQHU
+
+params:
+- part: 'snippet'
+- key: (your API key as a string)
+- q: (your search term as a string)
+
+requirements:
+- accept user search term
+- get JSON based on search term
+- display thumbnail of returned video
+
+bonus:
+- make thumbnails clickable
+	- link to YouTube
+	- play in lightbox
+- show link for more from channel
+- show buttons to get more results
+	- use previous/next links from JSON
+
+*start page*
+- header
+- search bar
+
+*results page*
+- search bar
+- "displaying results for..." text
+- thumbnails (clickable >> enlarge & play)
+- info (i.e. name) about each thumbnail
+	- buttons for "more like this" (re-runs search?)
